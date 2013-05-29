@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="sunmoon">
+      <h2>Sun &amp Moon</h2>
+
+      <div class="sun-times">
+        <div class="sun-path">
+          <div class="sun-animation"></div>
+        </div>
+        <div class="sun-symbol-path">
+          <span class="symbol">☼</span>
+        </div>
+      </div>
+
+      <div id="time-placeholder"></div>
+
+      <div class="clear">&nbsp;</div>
+    </div>
+
+    <!-- Handlebars Templates -->
+
+    <script id="time-template" type="text/x-handlebars-template">
+      <div class="legend">
+        <div class="sunrise">{{ sunrise }}</div>
+        <div class="sunset">{{ sunset }}</div>
+      </div>
+    </script>
+
+    <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="lib/handlebars.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

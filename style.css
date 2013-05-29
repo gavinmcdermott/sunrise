@@ -1,0 +1,72 @@
+.legend {
+  position: relative;
+  width: 230px;
+  height: 25px;
+}
+
+.legend .sunrise {
+  display: inline;
+  float left;
+  padding-left: 10px;
+}
+
+.legend .sunset {
+  display: inline;
+  text-align: right;
+  float: right;
+  padding-right: 10px;
+}
+
+.sunmoon {
+  position: relative;
+}
+
+.sun-times {
+  margin-top: 40px;
+  width: 230px;
+  height: 60px;
+  border-bottom: 1px solid #999;
+  overflow-y: hidden;
+}
+
+.sun-times .sun-path {
+  margin-left: 25px;
+  width: 170px;
+  height: 170px;
+  overflow: hidden;
+  border: 1px dashed #999;
+  border-radius: 50%;
+}
+
+.sun-animation {
+  width: 0px;
+  height: 150px;
+  background-color: rgba(255, 255, 0, 0.4);
+  -webkit-transition: width 2s ease-out;
+  transition: width 2s ease-out;
+}
+
+.sun-symbol-path {
+  position: absolute;
+  color: yellow;
+  /*background-color: rgba(125, 225, 232, 0.4);*/
+  left: 105px;
+  bottom: 0px;
+  height: 110px;
+
+  /*Root the rotation at the bottom of an invisible column*/
+  -webkit-transition: -webkit-transform 2s ease-out;
+  -webkit-transform-origin: 50% 100%;
+
+  /*Set our initial rotation to point not upwards, but towards
+  the bottom-left of the widget.*/
+  -webkit-transform: rotateZ(-60deg);
+}
+
+.sun-symbol-path .symbol {
+  text-shadow: 0 0px 7px #777;
+  /*background-color: rgba(125, 225, 232, 0.4);*/
+  position: relative;
+  font-size: 26px;
+  top: -7px;
+}
